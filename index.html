@@ -1,22 +1,10 @@
 <html>
     <style>
-        body {
-            font-family: 'Lora';
-            background-color: #F2F2F2;
-            color:#1e1e20 ;
-            margin-right: 30%;
-            margin-left: 30%;
-            margin-top: 5%;
-            height: 100%;
-            font-size: 20pt;
-            line-height: 25px;
-        }
         img {
             border: 1px solid #ddd;
             border-radius: 4px;
             padding: 5px;
-            width: 200px;
-            margin-left: 30%;
+            width: 250px;
             }
 
         #ResearchT {
@@ -27,23 +15,54 @@
             text-decoration: none; 
             font-family: Arial, Helvetica; 
             font-weight: bold;
-}
+        }
+
+        .left {
+                left: 0;
+                background: #7e7e7e;
+                position: absolute;
+                width: 100px;
+                top: 0;
+                bottom: 0;
+            }   
+        .right {
+                right: 0;
+             background: #7e7e7e;
+             position: absolute;
+                width: 100px;
+                top: 0;
+                bottom: 0;
+            }
+        .centered {
+            font-family: 'Lora';
+            background-color: #F2F2F2;
+            color:#1e1e20 ;
+            margin-right: 30%;
+            margin-left: 30%;
+            margin-top: 10%;
+            height: 100%;
+            font-size: 15pt;
+            line-height: 25px;
+        }​
+
         </style>
     <body>
             <title>Maria M. Robinson</title>
-            
-            <p><img src="profile_pic.jpeg" alt="web pic"></p>
+            <div class = "centered">
+                    <p><img src="profile_pic.jpeg" alt="web pic"></p>
 
-            <p>
-                Hello, my name is <b>Maria M. Robinson</b> and I'm currently a postdoc in <A href="https://bradylab.ucsd.edu/">Timothy F. Brady's</A> lab at the University of California, San Diego.
-            </p>
-            <p>
-                My primary research interest is in combining behavioral methods and computational modeling to study memory and visual cognition. I also have a secondary interest in topics in decision-making. 
-            </p>
-            <p>    
-                I received my PhD in Psychology at the University of Illinois at Urbana-Champaign, where I worked with <A href="http://labs.psychology.illinois.edu/~asbenjam/">Aaron S. Benjamin</A>  and collaborated
-                with <A href="https://psychology.illinois.edu/directory/profile/irwin">David E. Irwin</A> as well as <A href="http://regenwetterlab.org/">Michel Regenwetter</A>. 
-            </p>
-            
+                    <p>
+                        Hello, my name is <b>Maria M. Robinson</b> and I'm a postdoc in <A href="https://bradylab.ucsd.edu/">Timothy F. Brady's</A> lab at the University of California, San Diego.
+                    </p>
+                    <p>
+                        My primary research interest is in combining behavioral methods and computational modeling to study memory and visual cognition. I also have a secondary interest in topics in decision-making. 
+                    </p>
+                    <p>    
+                        I received my PhD in Psychology at the University of Illinois at Urbana-Champaign, where I worked with <A href="http://labs.psychology.illinois.edu/~asbenjam/">Aaron S. Benjamin</A>  and collaborated
+                        with <A href="https://psychology.illinois.edu/directory/profile/irwin">David E. Irwin</A> as well as <A href="http://regenwetterlab.org/">Michel Regenwetter</A>. 
+                    </p>
+            </div>
+            <div class  = "left"></div>
+            <div class  = "right"></div>
     </body>
 </html>
