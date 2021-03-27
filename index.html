@@ -9,22 +9,20 @@
             margin-bottom: 35px;
             }
 
-        #ResearchT {
-            display: inline-block;
-            color: black; 
-            border-color: #CCCCCC; 
-            padding: 8px; 
-            text-decoration: none; 
-            font-family: Arial, Helvetica; 
-            font-weight: bold;
+                
+        a:hover, a:visited, a:link, a:active
+        {
+             text-decoration: none;
+             color:#333 ;
         }
-        body {
+
+        .flex-container {
+          display: flex;
           
-            background-color: #F2F2F2;
-         
+               
         }​
 
-        #content{
+        .flex-item1{
             font-family: 'Lora';
             background-color: #F2F2F2;
             color:#333 ;
@@ -34,31 +32,10 @@
             height: 100%;
             font-size: 20pt;
             line-height: 25px;
-        }
-        a:hover, a:visited, a:link, a:active
-        {
-             text-decoration: none;
-             color:#333 ;
+
         }
 
-        #pubs{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 30px;
-            width: 125px;
-            font-size: 15px;
-            font-family:  'Helvetica';
-            color: rgb(148, 147, 147);
-            background-color:rgba(255, 255, 255, 0.993);
-            border: 2px solid rgb(99, 99, 99);
-            border-radius: 4px;
-            top:2%;
-            right:75%;
-        }
-
-        #main{
-            display: flex;
+        .flex-item2{
             align-items: center;
             justify-content: center;
             height: 30px;
@@ -73,25 +50,47 @@
             right:85%;
         }
 
+
+        
+        .flex-item3{
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 125px;
+            font-size: 15px;
+            font-family:  'Helvetica';
+            color: rgb(148, 147, 147);
+            background-color:rgba(255, 255, 255, 0.993);
+            border: 2px solid rgb(99, 99, 99);
+            border-radius: 4px;
+            top:2%;
+            right:75%;
+        }
+
+
         </style>
+
     <body>
             <title>Maria M. Robinson</title>
 
-                <div id="main"> <A href="index.html">Profilez</A> </div>
-                <div id="pubs"> <A href="Publications.html">Publications</A> </div>
-                <div id = "content">
-                    <p><img src="profile_pic.jpeg" alt="web pic"></p>
 
-                    <p>
-                        Hello, my name is <b>Maria M. Robinson</b> and I'm a postdoc in <A href="https://bradylab.ucsd.edu/">Timothy F. Brady's</A> lab at the University of California, San Diego.
-                    </p>
-                    <p>
-                        My primary research interest is in combining behavioral methods and computational modeling to study memory and visual cognition. I also have a secondary interest in topics in decision-making. 
-                    </p>
-                    <p>    
-                        I received my PhD in Psychology at the University of Illinois at Urbana-Champaign, where I completed my dissertation project under the supervision of <A href="http://labs.psychology.illinois.edu/~asbenjam/">Aaron S. Benjamin</A>  and collaborated
-                        with <A href="https://psychology.illinois.edu/directory/profile/irwin">David E. Irwin</A> as well as <A href="http://regenwetterlab.org/">Michel Regenwetter</A>. 
-                    </p>
+                <div class = "flex-container">
+                    <div class="flex-item2"> <A href="index.html">Profile</A> </div>
+                    <div class="flex-item3"> <A href="Publications.html">Publications</A> </div>
+                    <div class = "flex-item1">
+                        <p><img src="profile_pic.jpeg" alt="web pic"></p>
+
+                        <p>
+                            Hello, my name is <b>Maria M. Robinson</b> and I'm a postdoc in <A href="https://bradylab.ucsd.edu/">Timothy F. Brady's</A> lab at the University of California, San Diego.
+                        </p>
+                        <p>
+                            My primary research interest is in combining behavioral methods and computational modeling to study memory and visual cognition. I also have a secondary interest in topics in decision-making. 
+                        </p>
+                        <p>    
+                            I received my PhD in Psychology at the University of Illinois at Urbana-Champaign, where I completed my dissertation project under the supervision of <A href="http://labs.psychology.illinois.edu/~asbenjam/">Aaron S. Benjamin</A>  and collaborated
+                            with <A href="https://psychology.illinois.edu/directory/profile/irwin">David E. Irwin</A> as well as <A href="http://regenwetterlab.org/">Michel Regenwetter</A>. 
+                        </p>
+                    </div>
                 </div>
     </body>
 </html>
