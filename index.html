@@ -1,56 +1,71 @@
 <html>
     <style>
-        img {
-            border: 1px solid #ddd;
-            border-radius: 4px;
+
+        main,header,section,footer{
+            margin: 0;
             padding: 5px;
-            width: 250px;
-            margin-left: 30%;
-            margin-bottom: 35px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom:5px;
+            color:  #333;
+            display:flex;
+
+        }
+        
+        main {
+            background: #fefefa;  
+            flex-direction: column;
+            align-items: center;
+             justify-content: center;
             }
 
-                
+        img{
+            border: 1px solid #ddd8d8;
+            border-radius: 20px;
+            padding: 5px;
+             width: 250px;
+             margin-bottom:20px;
+             
+        }
+      
+        .links{     
+            flex-direction: row;    
+            justify-content: space-between;                
+        }
+
+        .profile, .pubs, .cv{
+            background-color:rgba(255, 255, 255, 0.993);
+            border-radius: 10px;
+            font-size: 14pt;
+            font-family:  'Helvetica';
+            color: rgb(148, 147, 147);
+            padding: 5px;    
+            margin-left: 20px;
+
+            
+        }
+
+        .content{
+            font-family: 'Helvetica';
+            background-color: #F2F2F2;
+            color:#333 ;
+            font-size: 18pt;
+            border-radius: 20px;
+            flex-direction: column;
+        }
+     
         a:hover, a:visited, a:link, a:active
         {
              text-decoration: none;
              color:#333 ;
         }
 
-        body{
-            font-family: 'Helvetica';
-            background-color: #F2F2F2;
-            color:#333 ;
-            margin-right: 10%;
-            margin-left: 10%;
-            margin-top: 2%;
-            height: 100%;
-            font-size: 20pt;
-            line-height: 25px;
-               
-        }​
-        .container {
-            vertical-align: middle;
-            padding-left: 40px;
-            padding-right: 200px;
-        }
 
-        .link{
-            display:inline-block;
-            text-align: center;
-            height: 20px;
-            width: 100px;
-            font-size: 19px;
+        .contact{
+            background: #fefefa;  
+            font-size: 14pt;
             font-family:  'Helvetica';
-            color: rgb(148, 147, 147);
-            background-color:rgba(255, 255, 255, 0.993);
-            border: 2px solid rgb(99, 99, 99);
-            border-radius: 10px;
-            margin-right:10px;
-            padding-left: 5px;
-            padding-right: 5px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            
+         
         }
 
 
@@ -58,15 +73,27 @@
 
     <body>
             <title>Maria M. Robinson</title>
+        <main>
+            <section class = "links">
 
-            <div class="container">
-                    <span class="link"> <A href="index.html">About me</A> </span>
-                    <span class="link"> <A href="Publications.html">Publications</A> </span>
-                    <span class="link"> <A href="CV.html">CV</A> </span>
-            </div>
+                <div class="profile">
+                     <A href="index.html">About me</A> 
+                </div>
+                <div class="pubs">
+                     <A href="Publications.html">Publications</A> 
+                </div>
+                <div class="cv">
+                    <A href="CV.pdf">CV</A>
+                </div>
+            </section>
                                  
-                        <p><img src="profile_pic.jpeg" alt="web pic"></p>
+            <section class="pic">
+                <div>
+                    <img src="profile_pic.jpeg" alt="web pic">
+                </div>
+            </section>
 
+            <section class="content">  
                         <p>
                             Hello, my name is <b>Maria Robinson</b> and I'm a postdoc in <A href="https://bradylab.ucsd.edu/">Timothy Brady's</A> lab at the University of California, San Diego.
                         </p>
@@ -77,10 +104,14 @@
                             I received my PhD in Psychology in 2019 at the University of Illinois at Urbana-Champaign.  While at Illinois, I completed my dissertation project under the supervision of <A href="http://labs.psychology.illinois.edu/~asbenjam/">Aaron Benjamin</A>  and collaborated
                             with <A href="https://psychology.illinois.edu/directory/profile/irwin">David Irwin</A> as well as <A href="http://regenwetterlab.org/">Michel Regenwetter</A>. 
                         </p>
-                        <p>
-                            Contact: mrobinson@ucsd.edu
-                        </p>
-                
+            </section>  
+
+            <footer class="contact">
+                    
+               <p>  Contact: mrobinson@ucsd.edu</p>
+                      
+             </footer>
+         </main>        
               
     </body>
 </html>
