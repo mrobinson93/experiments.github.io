@@ -1,88 +1,106 @@
 <html>
     <style>
 
+main,header,section,footer{
+            margin: 0;
+            padding: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom:5px;
+            color:  #333;
+            display:flex;
 
-        body{
-            font-family: 'Helvetica';
-            background-color: #F2F2F2;
-            color:#333 ;
-            margin-right: 10%;
-            margin-left: 10%;
-            margin-top: 2%;
-            margin-bottom: 2%;
-            height: 100%;
-            font-size: 20pt;
-            line-height: 25px;
-               
-        }​
-        .container {
-            vertical-align: middle;
-            padding-left: 40px;
-            padding-right: 200px;
+        }
+        
+        main {
+            background: #fefefa;  
+            flex-direction: column;
+            align-items: center;
+             justify-content: center;
+            }
+      
+        .links{     
+            flex-direction: row;    
+            justify-content: space-between;                
         }
 
-        .link{
-            display:inline-block;
-            text-align: center;
-            height: 20px;
-            width: 100px;
-            font-size: 19px;
+        .profile, .pubs, .cv{
+            background-color:rgba(255, 255, 255, 0.993);
+            border-radius: 10px;
+            font-size: 14pt;
             font-family:  'Helvetica';
             color: rgb(148, 147, 147);
-            background-color:rgba(255, 255, 255, 0.993);
-            border: 2px solid rgb(99, 99, 99);
-            border-radius: 10px;
-            margin-right:10px;
-            padding-left: 5px;
-            padding-right: 5px;
-            padding-top: 5px;
-            padding-bottom: 5px;
+            padding: 5px;    
+            margin-left: 20px;
+
             
         }
 
-                 
+        .submitted,.published,.chapter{
+            font-family: 'Helvetica';
+            background-color: #F2F2F2;
+            color:#333 ;
+            font-size: 18pt;
+            border-radius: 20px;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+     
         a:hover, a:visited, a:link, a:active
         {
              text-decoration: none;
              color:#333 ;
         }
 
-
-
         </style>
 
     <body>
             <title>Publications</title>
-            <div class="container">
-                <span class="link"> <A href="index.html">About me</A> </span>
-                <span class="link"> <A href="Publications.html">Publications</A> </span>
-                <span class="link"> <A href="CV.html">CV</A> </span>
-            </div>
-
-                        <p> <b>Submitted manuscripts</b></p>
-                        <p style="font-size: 16px;"> 1. Robinson, M. M., & Steyvers, M. (under review). Linking computational models of two core task of cognitive control.</p>
-                        <p style="font-size: 16px;">2. Regenwetter, M., Robinson, M. M., & Wang, C. (under review). Four internal inconsistencies in Tverksy and Kahneman’s (1992) Cumulative Prospect Theory paper: A case study in ambiguous theoretical scope.</p>
-                        <p style="font-size: 16px;">3. Regenwetter, M., Robinson, M. M., & Wang, C. (revise and resubmit). Are you an exception to Cumulative Prospect Theory?</p>
-
-                        <p><b>Journal publications</b></p>
-                        <p style="font-size: 16px;">1. Lively, Z., Robinson, M. M., & Benjamin, A. S. (accepted). Memory strength reveals qualitative changes in interactions between items in visual working memory. <i>Psychological Science. </i></p>
-                        <p style="font-size: 16px;">2. Akan, M., Robinson, M. M., Mickes, L., Wixted, J. T., & Benjamin, A. S. (2020). The effect of lineup size on eyewitness identification accuracy. <i>Journal of Experimental Psychology: Applied.</i> </p>
-                        <p style="font-size: 16px;">3. Robinson, M. M., Benjamin, A. S., & Irwin, D. E. (2020). Is there a K in capacity? Evaluating the discrete-slot model of visual short-term memory.  <i>Cognitive Psychology.</i> </p>
-                        <p style="font-size: 16px;">4. Regenwetter, M., & Robinson, M. M. (2019). Tutorial: Nuisance or substance? Leveraging heterogeneity of preferences.  <i>The Spanish Journal of Psychology.</i> </p>
-                        <p style="font-size: 16px;">5. Robinson, M. M., & Irwin, D. E. (2019). Are there two visual short-term memory stores? A state-trace analysis.  <i>Journal of Mathematical Psychology.</i> </p>
-                        <p style="font-size: 16px;">6. Regenwetter, M. & Robinson, M. M. (2018). The construct-behavior gap revisited: Reply to Hertwig and Pleskac. <i>Psychological Review.</i> </p>
-                        <p style="font-size: 16px;">7. Robinson, M. M., Clevenger, J., & Irwin, D. E. (2018). The action is in the task-set not in the action.  <i>Cognitive Psychology.</i> </p>
-                        <p style="font-size: 16px;">8. Irwin, D. E. & Robinson, M. M. (2018).  How post-saccadic target blanking affects the detection of stimulus displacements across saccades.   <i>Vision Research.</i> </p>
-                        <p style="font-size: 16px;">9. Regenwetter, M., & Robinson, M. M. (2017). The construct-behavior gap in behavioral decision research: A challenge beyond replicability.   <i>Psychological Review.</i> </p>
-                        <p style="font-size: 16px;">10. Robinson, M. M., & Irwin, D. E.  (2017).  Conscious error perception:  The impact of response interference from a secondary task.     <i>Attention, Perception, & Psychophysics.</i> </p>
-                        <p style="font-size: 16px;">11. Irwin, D. E., & Robinson, M. M.  (2016).  Perceiving a continuous visual world across voluntary eye blinks.     <i>Journal of Experimental Psychology:  Human Perception and Performance.</i> </p>
-                        <p style="font-size: 16px;">12. Robinson, M. M., & Irwin, D. E. (2016). Shifts of attention bias awareness of voluntary and reflexive eye movements.   <i>Experimental Brain Research.</i> </p>
-                        <p style="font-size: 16px;">13. Irwin, D. E., & Robinson, M. M. (2015). Detection of stimulus displacements across saccades is capacity limited and biased in favor of the saccade target.   <i>Frontiers in Systems Neuroscience.</i> </p>
-                        <p style="font-size: 16px;">14. Irwin, D. E., & Robinson, M. M. (2014). Perceiving stimulus displacements across saccades.    <i>Visual Cognition.</i> </p>
-                        <p style="font-size: 16px;">15. Robinson, M. M., & Morsella, E. (2014). The subjective effort of everyday mental tasks: Attending, assessing, and choosing.     <i>Motivation and Emotion.</i> </p>
-                    
-                      <p><b>Chapters</b></p>
-                      <p style="font-size: 16px;">Robinson, M. M., Poehlman, T. A., & Morsella, E. (2012). The subjective aspects of agency, cognitive control, and self-regulation: Findings from the action and consciousness laboratory. <i>Consciousness: States, Mechanisms, & Disorders. </i></p>
+            <main>
+                <section class = "links">
+    
+                    <div class="profile">
+                         <A href="index.html">About me</A> 
+                    </div>
+                    <div class="pubs">
+                         <A href="Publications.html">Publications</A> 
+                    </div>
+                    <div class="cv">
+                        <A href="CV.pdf">CV</A>
+                    </div>
+                </section>
+               
+    
+                <section class="submitted">  
+                    <p> <b>Submitted manuscripts</b></p>
+                    <p style="font-size: 16px;"> 1. Robinson, M. M., & Steyvers, M. (under review). Linking computational models of two core task of cognitive control.</p>
+                    <p style="font-size: 16px;">2. Regenwetter, M., Robinson, M. M., & Wang, C. (under review). Four internal inconsistencies in Tverksy and Kahneman’s (1992) Cumulative Prospect Theory paper: A case study in ambiguous theoretical scope.</p>
+                    <p style="font-size: 16px;">3. Regenwetter, M., Robinson, M. M., & Wang, C. (revise and resubmit). Are you an exception to Cumulative Prospect Theory?</p>
+                </section>
+                <section class="published">
+                    <p><b>Journal publications</b></p>
+                    <p style="font-size: 16px;">1. Lively, Z., Robinson, M. M., & Benjamin, A. S. (accepted). Memory strength reveals qualitative changes in interactions between items in visual working memory. <i>Psychological Science. </i></p>
+                    <p style="font-size: 16px;">2. Akan, M., Robinson, M. M., Mickes, L., Wixted, J. T., & Benjamin, A. S. (2020). The effect of lineup size on eyewitness identification accuracy. <i>Journal of Experimental Psychology: Applied.</i> </p>
+                    <p style="font-size: 16px;">3. Robinson, M. M., Benjamin, A. S., & Irwin, D. E. (2020). Is there a K in capacity? Evaluating the discrete-slot model of visual short-term memory.  <i>Cognitive Psychology.</i> </p>
+                    <p style="font-size: 16px;">4. Regenwetter, M., & Robinson, M. M. (2019). Tutorial: Nuisance or substance? Leveraging heterogeneity of preferences.  <i>The Spanish Journal of Psychology.</i> </p>
+                    <p style="font-size: 16px;">5. Robinson, M. M., & Irwin, D. E. (2019). Are there two visual short-term memory stores? A state-trace analysis.  <i>Journal of Mathematical Psychology.</i> </p>
+                    <p style="font-size: 16px;">6. Regenwetter, M. & Robinson, M. M. (2018). The construct-behavior gap revisited: Reply to Hertwig and Pleskac. <i>Psychological Review.</i> </p>
+                    <p style="font-size: 16px;">7. Robinson, M. M., Clevenger, J., & Irwin, D. E. (2018). The action is in the task-set not in the action.  <i>Cognitive Psychology.</i> </p>
+                    <p style="font-size: 16px;">8. Irwin, D. E. & Robinson, M. M. (2018).  How post-saccadic target blanking affects the detection of stimulus displacements across saccades.   <i>Vision Research.</i> </p>
+                    <p style="font-size: 16px;">9. Regenwetter, M., & Robinson, M. M. (2017). The construct-behavior gap in behavioral decision research: A challenge beyond replicability.   <i>Psychological Review.</i> </p>
+                    <p style="font-size: 16px;">10. Robinson, M. M., & Irwin, D. E.  (2017).  Conscious error perception:  The impact of response interference from a secondary task.     <i>Attention, Perception, & Psychophysics.</i> </p>
+                    <p style="font-size: 16px;">11. Irwin, D. E., & Robinson, M. M.  (2016).  Perceiving a continuous visual world across voluntary eye blinks.     <i>Journal of Experimental Psychology:  Human Perception and Performance.</i> </p>
+                    <p style="font-size: 16px;">12. Robinson, M. M., & Irwin, D. E. (2016). Shifts of attention bias awareness of voluntary and reflexive eye movements.   <i>Experimental Brain Research.</i> </p>
+                    <p style="font-size: 16px;">13. Irwin, D. E., & Robinson, M. M. (2015). Detection of stimulus displacements across saccades is capacity limited and biased in favor of the saccade target.   <i>Frontiers in Systems Neuroscience.</i> </p>
+                    <p style="font-size: 16px;">14. Irwin, D. E., & Robinson, M. M. (2014). Perceiving stimulus displacements across saccades.    <i>Visual Cognition.</i> </p>
+                    <p style="font-size: 16px;">15. Robinson, M. M., & Morsella, E. (2014). The subjective effort of everyday mental tasks: Attending, assessing, and choosing.     <i>Motivation and Emotion.</i> </p>
+                </section>
+                <section class ="chapter">
+                  <p><b>Chapters</b></p>
+                  <p style="font-size: 16px;">Robinson, M. M., Poehlman, T. A., & Morsella, E. (2012). The subjective aspects of agency, cognitive control, and self-regulation: Findings from the action and consciousness laboratory. <i>Consciousness: States, Mechanisms, & Disorders. </i></p>
+                </section>  
+    
+            </main>          
 
     </body>
 </html>
