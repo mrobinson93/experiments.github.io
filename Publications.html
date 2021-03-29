@@ -1,5 +1,5 @@
 <html>
-
+    
     <style>
 
         main,header,section,footer{
@@ -63,6 +63,72 @@
             margin-left: 6em;
             margin-right: 2em;
             font-size: 14pt;
+        }
+
+        @media (max-width:700px){
+            main,header,section,footer{
+                margin: 0;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom:5px;
+                color:  #333;
+                display:flex;
+
+            }
+        
+            main {
+                background: #fefefa;  
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                }
+        
+            .links{     
+                flex-direction: row;    
+                        
+            }
+
+   
+            .profile, .pubs, .cv{
+                background-color:rgba(255, 255, 255, 0.993);
+                border-radius: 10px;
+                font-size: 18pt;
+                font-family:  'Helvetica';
+                color: rgb(148, 147, 147);
+                padding: 20px;   
+                margin-top:20px;
+            
+            }
+
+            .submitted,.published,.chapter{
+                font-family: 'Helvetica';
+                background-color: #F2F2F2;
+                color:#333 ;
+                font-size: 18pt;
+                border-radius: 10px;
+                flex-direction: column;
+                margin-top: 20px;
+                width:90%;
+                text-align: justify;
+                line-height:20pt;
+            }
+        
+     
+            a:hover, a:visited, a:link, a:active
+            {
+                text-decoration: none;
+                color:rgb(77, 77, 77) ;
+                text-shadow: -.5px -.5px 0 rgb(148, 147, 147), .5px 0 0 rgb(148, 147, 147);
+            }
+
+
+            .hang {
+                text-indent: -4em;
+                margin-left: 6em;
+                margin-right: 2em;
+                font-size: 14pt;
+            }
+
         }
 
         </style>
